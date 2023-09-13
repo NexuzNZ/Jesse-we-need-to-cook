@@ -1,0 +1,266 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+*{
+	margin: 0%;
+	padding: 0px;
+	box-sizing: border-box;
+}
+
+.cabecera {
+    background: rgb(26, 165, 19);  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to bottom, #414345, #232526);  /* Chrome 10-25, Safari 5.1-6 */
+	height: 100px;
+	display: flex;
+	justify-content: flex-start;
+    align-items: center;
+    height: 110px;
+    width: 100%;
+    padding: 10px;
+}
+
+.logo {
+    width: 24%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    font-family: "Poppins", sans-serif;
+    flex-direction: column;
+}
+
+.subtitulo {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    width: 100%;
+    font-weight: 800;
+    font-size: 12px;
+    padding-left: 3px;
+}
+
+.logo-img {
+    width: 100%;
+    height: 80px;
+}
+
+.navegacion-principal {
+    width: 100%;
+    height: 100%;
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.opciones-header a,
+.iconos-header a{
+    text-decoration: none;
+    color: white;
+    padding: 0px 5px 0px 5px;
+}
+
+
+
+.iconos-header {
+    padding: 0px 60px 0px 100px;
+}
+
+.opciones-header {
+    padding: 30px 20px 0px 20px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-between;
+}
+
+.opciones-header-btn a {
+    padding: 0px 12px 0px 12px;
+}
+
+
+.opciones-header-text {
+   font-weight: 800;
+   font-size: 9px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+
+.opciones-header i {
+    padding-right: 3px;
+}
+
+/*
+.opciones-header {
+    padding: 0px 376px 0px 376px;
+}
+*/
+
+.banner {
+    width: 100%;
+    height: 7vh;    
+    background: rgba(12, 12, 1, 0.933);
+    border-bottom: 3px solid black;
+    border-top: 3px solid black;
+    display: flex;
+}
+
+.banner-opciones {
+    display: flex;
+    width: 58%;
+    height: 100%;
+    font-family: "Poppins", sans-serif;
+    color: white;
+    /*padding: 10px 20px 10px 0px;*/
+}
+
+
+
+
+
+.banner-sec,
+.banner-selec {
+    padding: 0px 40px 0px 40px;
+    display: flex;
+    align-items: center;
+}
+
+.banner-selec {
+    border: 3px solid white;
+}
+
+.texto-banner {
+    text-decoration: none;
+    color: white;
+}
+
+.texto-banner i {
+    padding-right: 4px;
+}
+
+.banner-info {
+    width: 30%;
+    display: flex;
+    height: 100%;
+    background-color: azure;
+}
+
+.banner-text {
+    width: 100%;
+    height: 100%;
+}
+
+.banner-marcas {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 12%;
+    font-family: "Poppins", sans-serif;
+    color: white;
+}
+
+.text-principal {
+    font-size: 12px;
+    font-weight: 800;
+}
+
+.text-secundario {
+    font-size: 8px;
+}
+
+.marque-prueba {
+    background-color: rgb(26, 165, 19);
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    color: #FFFFCC;
+    font-size: 31px;
+}
+
+
+
+
+/* CONTENEDOR - 2 */
+
+.contenedor-2 {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    border-bottom: 2px solid rgba(12, 12, 1, 0.933);
+    
+    background-image: url("/imagenes/Fondo-Fer.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    
+    
+}
+
+.principal-info {
+    width: 66%;
+    height: 65%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0px 30px 0px 70px;
+}
+
+.texto-1,
+.texto-2,
+.texto-3 {
+    font-family: "Segoe UI", sans-serif;
+}
+
+.barra-dec {
+    color: black;
+    font-weight: 800;
+    font-size: 20px;
+}
+
+.texto-1 {
+    color: black;
+    font-weight: 1000;
+    font-size: 40px;
+    padding: 25px 0px 30px 20px;
+}
+
+.texto-2 {
+    color: rgba(12, 12, 1, 0.933);
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    padding-bottom: 20px;
+}
+
+.texto-3 {
+    color: rgba(12, 12, 1, 0.933);
+    font-weight: 650;
+    padding-bottom: 25px;
+}
+
+.barra-dec-final {
+    color: black;
+    font-weight: 800;
+    font-size: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+
+/* CONTENEDOR 3 */
+
+.contenedor-3 {
+    width: 100%;
+    height: auto;
+    background-color: #dcebdd;
+}
+
+/* FOOTER DE PAGINA */
+
+.footer {
+    width: 100%;
+    height: 50vh;
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+}
