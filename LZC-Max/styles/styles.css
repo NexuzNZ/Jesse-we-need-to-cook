@@ -1,0 +1,692 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+*{
+	margin: 0%;
+	padding: 0px;
+	box-sizing: border-box;
+}
+
+.cabecera {
+    background: rgb(26, 165, 19);  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to bottom, #414345, #232526);  /* Chrome 10-25, Safari 5.1-6 */
+	height: 100px;
+	display: flex;
+	justify-content: flex-start;
+    align-items: center;
+    height: 110px;
+    width: 100%;
+    padding: 10px;
+}
+
+.logo {
+    width: 24%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    font-family: "Poppins", sans-serif;
+    flex-direction: column;
+}
+
+.subtitulo {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    width: 100%;
+    font-weight: 800;
+    font-size: 12px;
+    padding-left: 3px;
+}
+
+.logo-img {
+    width: 100%;
+    height: 80px;
+}
+
+.navegacion-principal {
+    width: 100%;
+    height: 100%;
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.opciones-header a,
+.iconos-header a{
+    text-decoration: none;
+    color: white;
+    padding: 0px 5px 0px 5px;
+}
+
+
+
+.iconos-header {
+    padding: 0px 60px 0px 160px;
+}
+
+.opciones-header {
+    padding: 30px 20px 0px 20px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-between;
+}
+
+.opciones-header-btn a {
+    padding: 0px 12px 0px 12px;
+}
+
+
+.opciones-header-text {
+   font-weight: 800;
+   font-size: 9px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+
+.opciones-header i {
+    padding-right: 3px;
+}
+
+/*
+.opciones-header {
+    padding: 0px 376px 0px 376px;
+}
+*/
+
+.banner {
+    width: 100%;
+    height: 7vh;    
+    background: rgba(12, 12, 1, 0.933);
+    border-bottom: 3px solid black;
+    border-top: 3px solid black;
+    display: flex;
+}
+
+.banner-opciones {
+    display: flex;
+    width: 58%;
+    height: 100%;
+    font-family: "Poppins", sans-serif;
+    color: white;
+    /*padding: 10px 20px 10px 0px;*/
+}
+
+
+
+
+
+.banner-sec,
+.banner-selec {
+    padding: 0px 40px 0px 40px;
+    display: flex;
+    align-items: center;
+}
+
+.banner-selec {
+    border: 3px solid white;
+}
+
+.texto-banner {
+    text-decoration: none;
+    color: white;
+}
+
+.texto-banner i {
+    padding-right: 4px;
+}
+
+.banner-info {
+    width: 30%;
+    display: flex;
+    height: 100%;
+    background-color: azure;
+}
+
+.banner-text {
+    width: 100%;
+    height: 100%;
+}
+
+.banner-marcas {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 12%;
+    font-family: "Poppins", sans-serif;
+    color: white;
+}
+
+.text-principal {
+    font-size: 12px;
+    font-weight: 800;
+}
+
+.text-secundario {
+    font-size: 8px;
+}
+
+.marque-prueba {
+    background-color: rgb(26, 165, 19);
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    color: #FFFFCC;
+    font-size: 31px;
+}
+
+
+
+
+/* CONTENEDOR - 2 */
+
+.contenedor-2 {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    border-bottom: 2px solid rgba(12, 12, 1, 0.933);
+    
+    background-image: url("../imagenes/Fondo-Fer.png");
+	background-size: 100% 100vh;
+	background-repeat: no-repeat;
+    
+    
+}
+
+.principal-info {
+    width: 66%;
+    height: 65%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0px 30px 0px 70px;
+}
+
+.texto-1,
+.texto-2,
+.texto-3 {
+    font-family: "Segoe UI", sans-serif;
+}
+
+.barra-dec {
+    color: black;
+    font-weight: 800;
+    font-size: 20px;
+}
+
+.texto-1 {
+    color: black;
+    font-weight: 1000;
+    font-size: 40px;
+    padding: 25px 0px 30px 20px;
+}
+
+.texto-2 {
+    color: rgba(12, 12, 1, 0.933);
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    padding-bottom: 20px;
+}
+
+.texto-3 {
+    color: rgba(12, 12, 1, 0.933);
+    font-weight: 650;
+    padding-bottom: 25px;
+}
+
+.barra-dec-final {
+    color: black;
+    font-weight: 800;
+    font-size: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+
+/* CONTENEDOR 3 */
+
+.contenedor-3 {
+    width: 100%;
+    height: 125vh;
+
+    background-image: url("../imagenes/Fondo-Fer-2.png");
+    background-size: 100% 130vh;
+	background-repeat: no-repeat;
+}
+
+.nuestras-marcas {
+    padding: 100px 120px 100px 120px;
+}
+
+.texto-marcas {
+    font-family: "Segoe UI", sans-serif;
+    font-size: 40px;
+    font-weight: 800;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 60px;
+}
+
+.texto-marcas-2 {
+    font-family: "Poppins", sans-serif;
+    font-size: 15px;
+}
+
+.texto-marcas-2 i{
+    padding-right: 4px;
+}
+
+.en-papeleria,
+.en-hardware {
+    font-family: "Poppins", sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    padding-bottom: 10px;
+    padding-top: 20px;
+}
+
+.en-hardware {
+    padding-top: 50px;
+}
+
+.marcas-papeleria {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 10%;
+    padding-right: 10%;
+    
+}
+
+.marcas-papeleria img,
+.marcas-hardware img {
+    width: 150px;
+    height: 150px;
+    border-radius: 90px;
+    border: 3px solid white;
+}
+
+.hardware-1,
+.hardware-2 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.hardware-1 {
+    width: 100%;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.hardware-2 {
+    padding: 20px 19% 0px 19%;
+    width: 100%;
+}
+
+/* CONTENEDOR 4 */
+.contenedor-4 {
+    width: 100%;
+    height: auto;
+}
+
+.secciones-pagina {
+    display: flex;
+    padding: 50px 180px 50px 180px;
+    justify-content: space-between;
+}
+
+.contenido-seccion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 250px;
+    height: 250px;
+    border-radius: 150px;
+}
+
+.contenido-seccion img {
+    width: 160px;
+    height: 150px;
+}
+
+.contenido-seccion p {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 10px;
+    padding-top: 15px;
+}
+
+.papeleria-contenido {
+    background-color: aquamarine;
+}
+
+.hardware-contenido {
+    background-color: gray;
+}
+
+.impresora-contenido {
+    background-color: #cae7de;
+}
+
+.ofertas-contenido {
+    background-color: rgb(236, 236, 68);
+}
+
+/* CONTENEDOR - 5 */
+
+.contenedor-5 {
+    width: 100%;
+    height: auto;
+    padding: 40px;
+}
+
+.titulo-tienda-online {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 25px;
+    padding-top: 25px;
+    background-image: url("../imagenes/Prueba-fondo-tienda-2.png");
+    background-repeat: no-repeat;
+    background-size: 100% 20vh;
+    border-top: 5px solid rgb(249, 249, 9);
+}
+
+.titulo-TO, .subtitulo-TO {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+}
+
+.titulo-TO {
+    font-size: 30px;
+}
+
+.subtitulo-TO {
+    font-size: 15px;
+}
+
+.apartados-header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: auto;
+    padding: 12px 10px 10px 10px;;
+}
+
+.titulo-banner-apartados {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    font-family: "Poppins", sans-serif;
+}
+
+.text-apartados-1 {
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.text-apartados-2 {
+    font-size: 10px;
+    font-weight: 600;
+}
+
+.iconos-banner-apartados {
+    width: 20%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.icono-hardware-4, .icono-papeleria-4, .icono-ofertas-4 {
+    height: 50px;
+    width: 50px;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 40px;
+    background-color: yellow;
+}
+
+/* Productos */
+/* Productos: Papeleria*/
+.apartado-papeleria {
+    width: 100%;
+    height: 100%;
+}
+
+.titulo-apartado-papeleria {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    background-color: rgba(255, 255, 0, 0.525);
+    padding: 10px;
+    margin-top: 70px;
+}
+
+/* Productos: Hardware*/
+.apartado-hardware {
+    width: 100%;
+    height: auto;
+}
+
+.titulo-apartado-hardware {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    background-color: rgba(149, 171, 178, 0.373);
+    padding: 10px;
+}
+
+.text-explorar-mas-hardware {
+    font-family: "Poppins", sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    display: flex;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+ }
+
+ .text-explorar-mas-hardware a{
+    text-decoration: none;
+    color: black;
+    background-color: rgb(112, 217, 217);
+    padding: 20px;
+    border-radius: 30px;
+    width: 250px;
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+ }
+
+ .puntos-explorar-mas-hardware {
+    font-size: 18px;
+ }
+
+/* Productos: Ofertas*/
+.apartado-ofertas {
+    width: 100%;
+    height: auto;
+}
+
+/* Para todos los productos */
+.apartado-T1 {
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.apartado-T2 {
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.apartado-T1 , .apartado-T2 {
+    text-decoration: none;
+    color: black;
+    font-family: "Poppins", sans-serif;
+}
+
+.productos-P {
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+}
+
+.contenedor-producto{
+    /* background-color: rgba(12, 12, 1, 0.933); */
+     background-color: white;
+     margin: 0 20px 0px 40px; 
+     height: auto;
+     display: flex;
+     align-items: center;
+     border-bottom: 2px solid black;
+ }
+ 
+ .imagen-producto{
+     margin: 20px 20px 20px 20px;
+     width: 160px;
+     height: 160px;
+ }
+ 
+ .img{
+     width: 100%;
+     height: 100%;
+ }
+ 
+ .info-producto{
+     margin: 20px 20px 20px 20px;
+     font-family: "Poppins", sans-serif;
+ }
+
+ .info-producto-nombre {
+    font-size: 25px;
+    font-weight: 600;
+ }
+
+ .info-producto-des {
+    font-size: 12px;
+ }
+
+ .info-producto-precio {
+    font-size: 30px;
+    font-weight: 700;
+    padding-top: 5px;
+ }
+
+ .boton-agregar {
+    font-family: "Poppins", sans-serif;
+    font-size: 15px;
+    margin-top: 10px;
+    padding: 4px;
+    font-weight: 600;
+ }
+
+ .explorar-mas {
+    height: auto;
+    width: 100%;
+    padding: 5px 50px 50px 50px;
+ }
+
+ .text-explorar-mas {
+    font-family: "Poppins", sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    display: flex;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+ }
+
+ .text-explorar-mas a{
+    text-decoration: none;
+    color: black;
+    background-color: yellow;
+    padding: 20px;
+    border-radius: 30px;
+    width: 250px;
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+ }
+
+ .puntos-explorar-mas {
+    font-size: 18px;
+ }
+
+
+
+
+
+
+
+
+
+
+
+/* Banners de pagina */
+.banners-pagina {
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    display: flex;
+    justify-content: center;
+}
+
+.contenedor-banners {
+    width: 80%;
+    height: 50vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+}
+
+.banner-ss {
+    width: 405px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner-1 {
+    background-image: url("../imagenes/banner-1.jpeg");
+    background-size: 370px 100%;
+}
+
+.banner-2 {
+    background-image: url("../imagenes/banner-2.jpeg");
+    background-size: 370px 100%;
+    color: rgb(249, 238, 235);
+}
+
+.banner-3 {
+    background-image: url("../imagenes/banner-3.jpeg");
+    background-size: 370px 100%;
+    background-repeat: no-repeat;
+    color: white;
+}
+
+
+
+/* FOOTER DE PAGINA */
+
+.footer {
+    width: 100%;
+    height: 50vh;
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+}
