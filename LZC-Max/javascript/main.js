@@ -32,7 +32,7 @@ function agregarMueble(e){
 	// Delegation para agregar-carrito
 	console.log("agregado")
 	e.preventDefault();
-	if(e.target.classList.contains('agregar-carrito')) {
+	if(e.target.classList.contains('boton-agregar')) {
 		const mueble = e.target.parentElement.parentElement; //Va al class=“card” o class=“contenedor-producto” 
 		// Enviamos el mueble seleccionado para tomar sus datos
 		leerDatosMueble(mueble);
@@ -44,9 +44,9 @@ function leerDatosMueble(mueble) {
 
 	const infoMueble = {
 		imagen: mueble.querySelector('.imagen-producto').src,
-		titulo: mueble.querySelector('.info-producto').querySelector('.name-producto').textContent,
-		precio: mueble.querySelector('.info-producto').querySelector('.precio').textContent,
-		id: mueble.querySelector('a').getAttribute('data-id'),
+		titulo: mueble.querySelector('.info-producto').querySelector('.info-nombre-producto').textContent,
+		precio: mueble.querySelector('.info-producto').querySelector('.info-producto-precio').textContent,
+		id: mueble.querySelector('button').getAttribute('data-id'),
 		cantidad: 1
 	}
 
