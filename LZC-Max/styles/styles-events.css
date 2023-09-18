@@ -117,5 +117,14 @@
     background-color: rgb(255, 255, 255);
 }
 
+/* Hardware */
+.seccion-inicial-hardware:hover {
+    color: rgba(38, 29, 218, 0.97);
+}
+
+/* Papeleria */
+.seccion-inicial-papeleria:hover {
+    color: rgb(195, 31, 132);
+}
 
 
