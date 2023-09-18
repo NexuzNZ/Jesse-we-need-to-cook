@@ -6,6 +6,11 @@
 	box-sizing: border-box;
 }
 
+html {
+	scroll-behavior: smooth;
+}
+
+
 .cabecera {
     background: rgb(26, 165, 19);  /* fallback for old browsers */
 	background: -webkit-linear-gradient(to bottom, #414345, #232526);  /* Chrome 10-25, Safari 5.1-6 */
@@ -164,6 +169,11 @@
     font-weight: 800;
 }
 
+.text-principal a {
+    text-decoration: none;
+    color: white;
+}
+
 .text-secundario {
     font-size: 8px;
 }
@@ -253,12 +263,13 @@
     height: 120vh;
 
     background-image: url("../imagenes/Fondo-Marcas.png");
-    background-size: 100% 130vh;
+    background-size: 100% 120vh;
 	background-repeat: no-repeat;
+    border-bottom: 2px solid black;
 }
 
 .nuestras-marcas {
-    padding: 100px 120px 100px 120px;
+    padding: 80px 120px 80px 120px;
 }
 
 .texto-marcas {
@@ -294,6 +305,7 @@
 
 .marcas-papeleria {
     display: flex;
+    height: 20vh;
     justify-content: space-between;
     padding-left: 15%;
     padding-right: 15%;
@@ -318,6 +330,7 @@
     width: 100%;
     padding-left: 15%;
     padding-right: 15%;
+    height: 20vh;
 }
 
 .hardware-2 {
@@ -335,6 +348,7 @@
     display: flex;
     padding: 50px 180px 50px 180px;
     justify-content: space-between;
+    height: 50vh;
 }
 
 .contenido-seccion {
@@ -372,7 +386,7 @@
 }
 
 .ofertas-contenido {
-    background-color: rgb(236, 236, 68);
+    background-color: rgba(237, 237, 59, 0.33);
 }
 
 /* CONTENEDOR - 5 */
@@ -381,6 +395,7 @@
     width: 100%;
     height: auto;
     padding: 40px;
+    background-color: rgba(241, 241, 134, 0.151);
 }
 
 .titulo-tienda-online {
@@ -460,15 +475,61 @@
     height: 100%;
 }
 
+.banner-apartado-papeleria {
+    margin-top: 70px;
+    display: flex;
+    background-color: rgba(255, 255, 0, 0.525);
+    padding: 10px;
+    border: 2px solid transparent;
+}
+
 .titulo-apartado-papeleria {
     display: flex;
     flex-direction: column;
-    width: 100%;
-    height: auto;
-    background-color: rgba(255, 255, 0, 0.525);
-    padding: 10px;
-    margin-top: 70px;
+    width: 40%;
+    height: 100%;
 }
+
+.icono-apartado-papeleria-div {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 58%;
+}
+
+.icono-apartado-papeleria {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: yellow;
+    border-radius: 40px;
+    width: 60px;
+    height: 60px;
+    font-size: 28px;
+}
+
+
+ .text-explorar-mas-papeleria {
+    font-family: "Poppins", sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    display: flex;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+ }
+
+ .text-explorar-mas-papeleria a{
+    text-decoration: none;
+    color: black;
+    background-color: yellow;
+    padding: 20px;
+    border-radius: 30px;
+    width: 250px;
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+ }
 
 /* Productos: Hardware*/
 .apartado-hardware {
@@ -476,13 +537,36 @@
     height: auto;
 }
 
+.banner-apartado-hardware {
+    margin-top: 50px;
+    display: flex;
+    background-color: rgba(149, 171, 178, 0.373);
+    padding: 10px;
+}
+
 .titulo-apartado-hardware {
     display: flex;
     flex-direction: column;
-    width: 100%;
-    height: auto;
-    background-color: rgba(149, 171, 178, 0.373);
-    padding: 10px;
+    width: 40%;
+    height: 100%;
+}
+
+.icono-apartado-hardware-div {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 58%;
+}
+
+.icono-apartado-hardware {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: gray;
+    border-radius: 40px;
+    width: 60px;
+    height: 60px;
+    font-size: 28px;
 }
 
 .text-explorar-mas-hardware {
@@ -495,10 +579,11 @@
     align-items: center;
  }
 
+
  .text-explorar-mas-hardware a{
     text-decoration: none;
     color: black;
-    background-color: rgb(112, 217, 217);
+    background-color: rgb(169, 216, 216);
     padding: 20px;
     border-radius: 30px;
     width: 250px;
@@ -507,25 +592,84 @@
     margin-top: 5px;
  }
 
- .puntos-explorar-mas-hardware {
-    font-size: 18px;
- }
-
 /* Productos: Ofertas*/
 .apartado-ofertas {
     width: 100%;
     height: auto;
 }
 
+.banner-apartado-ofertas {
+    margin-top: 50px;
+    display: flex;
+    background-color: rgba(17, 192, 219, 0.492);
+    padding: 10px;
+}
+
+.titulo-apartado-ofertas {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    height: 100%;
+}
+
+.icono-apartado-ofertas-div {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 58%;
+}
+
+.icono-apartado-ofertas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(101, 165, 234);
+    color: white;
+    border-radius: 40px;
+    width: 60px;
+    height: 60px;
+    font-size: 28px;
+}
+
+.text-explorar-mas-ofertas {
+    font-family: "Poppins", sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.text-explorar-mas-ofertas a{
+    text-decoration: none;
+    color: black;
+    background-color: rgba(17, 192, 219, 0.492);
+    padding: 20px;
+    border-radius: 30px;
+    width: 250px;
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+}
+
+
 /* Para todos los productos */
+.explorar-mas {
+    height: auto;
+    width: 100%;
+    padding: 5px 50px 50px 50px;
+ }
+
 .apartado-T1 {
     font-size: 30px;
     font-weight: 700;
+    border: 3px solid transparent;
 }
 
 .apartado-T2 {
     font-size: 12px;
     font-weight: 600;
+    border: 3px solid transparent;
 }
 
 .apartado-T1 , .apartado-T2 {
@@ -587,34 +731,6 @@
     margin-top: 10px;
     padding: 4px;
     font-weight: 600;
- }
-
- .explorar-mas {
-    height: auto;
-    width: 100%;
-    padding: 5px 50px 50px 50px;
- }
-
- .text-explorar-mas {
-    font-family: "Poppins", sans-serif;
-    font-size: 15px;
-    font-weight: 600;
-    display: flex;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
- }
-
- .text-explorar-mas a{
-    text-decoration: none;
-    color: black;
-    background-color: yellow;
-    padding: 20px;
-    border-radius: 30px;
-    width: 250px;
-    display: flex;
-    justify-content: center;
-    margin-top: 5px;
  }
 
  .puntos-explorar-mas {
