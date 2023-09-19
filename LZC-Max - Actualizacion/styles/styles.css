@@ -806,6 +806,27 @@ html {
     align-items: center;
 }
 
+.footer-right{
+    padding: 50px;
+}
+
+.footer-right p{
+    font-family: "Poppins";
+}
+
+.footer-right a{
+    text-decoration: none;
+}
+        
+.footer-left{
+    padding: 50px;
+}
+
+.footer-left img{
+    filter: hue-rotate(180deg) saturate(0) brightness(0.5);
+}
+
+
 /** Carrito **/
 @media (min-width: 768px) {
     .max-width-30 {
