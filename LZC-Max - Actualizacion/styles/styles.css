@@ -13,7 +13,8 @@ html {
 
 .cabecera {
     background: rgb(26, 165, 19);  /* fallback for old browsers */
-	background: -webkit-linear-gradient(to bottom, #414345, #232526);  /* Chrome 10-25, Safari 5.1-6 */
+	background-image: linear-gradient(to right, rgb(126, 230, 85), #393 66%, #393 100%);
+	/* background: -webkit-linear-gradient(to bottom, #414345, #232526);   Chrome 10-25, Safari 5.1-6 */
 	height: 100px;
 	display: flex;
 	justify-content: flex-start;
