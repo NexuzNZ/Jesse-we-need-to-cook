@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Max Print - LZC</title>
+    <title>Max Print - LZC (Papeleria)</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" type="text/css" href="styles/styles-categorias.css">
     <link rel="stylesheet" href="styles/styles-events.css">
@@ -24,7 +24,7 @@
                 <nav class="opciones-header">
                     <div class="opciones-header-btn">
                         <a href="index.html"><i class="fa-solid fa-house"></i>Regresar a Inicio</a>
-                        <a href="#"><i class="fa-solid fa-circle-info"></i>Sobre Nosotros</a>
+                        <a href="#sobre-nosotros"><i class="fa-solid fa-circle-info"></i>Sobre Nosotros</a>
                     </div>
                     <div class="opciones-header-text">
                         <p>
@@ -39,6 +39,7 @@
                             <li class="submenu">
                                 <i class="fa-solid fa-cart-shopping"></i>
                                 <p>Carrito</p>
+                                <i class="fa-solid fa-angle-down"></i>
                                 <div id="carrito">
                                     <table id="lista-carrito">
                                         <thead>
@@ -72,12 +73,12 @@
                 <a href="Stationery.html" class="text-b-p2"><i class="fa-solid fa-pencil"></i>Papeleria</a>
             </div>
             <div class="banner-p2 banner-sec">
-                <a href="#" class="text-b-p2"><i class="fa-solid fa-tags"></i>Ofertas!</a>
+                <a href="OnSales.html" class="text-b-p2"><i class="fa-solid fa-tags"></i>Ofertas!</a>
             </div>
         </nav>
         <nav class="banner-marcas">
             <div class="text-principal">
-                <a href="#"><i class="fa-solid fa-circle-info"></i> Nuestras marcas </a>
+                <a href="#nuestras-marcas"><i class="fa-solid fa-circle-info"></i> Nuestras marcas </a>
             </div>
             <div class="text-secundario">
                 <p>Ofrecemos productos de diversas marcas</p>
@@ -108,7 +109,7 @@
                     <p class="seccion-descripcion"><i class="fa-solid fa-circle-check"></i>Todo lo que ocupas para tus apuntes y proyectos escolares esta aqui.<br>
                     </p>
                 </div>
-                <div class="seccion-marcas">
+                <div class="seccion-marcas" id="nuestras-marcas">
                     <div class="marca"><img src="imagenes/Bic logo.png" alt="Marca 'Bic' "></div>
                     <div class="marca"><img src="imagenes/Santul logo.png" alt="Marca 'Santul'"></div>
                     <div class="marca"><img src="imagenes/PaperMate logo.png" alt="Marca 'Papper Mate'"></div>
@@ -118,7 +119,7 @@
             </nav>
         </section>
         <section class="contenedor-3">
-            <nav class="productos-hardware">
+            <nav class="productos-hardware" id="productos">
                 <div class="contenedor-producto">
                     <div class="imagen-producto">
                         <img class="img" src="img-productos/Producto (6).jpg">
@@ -130,8 +131,11 @@
                             <i class="fa-solid fa-circle-check"></i> Marca: Scribe. <br>
                             <i class="fa-solid fa-circle-check"></i> De: Raya, Cuadro, Cuadro chico.
                         </p>
-                        <p class="info-producto-precio">$63</p>
-                        <button class="boton-agregar">Agregar al carrito</button>
+                        <p class="info-producto-precio">
+                            <del>$63</del> <i class="fa-solid fa-circle-arrow-right"></i> <span class="span">$50</span>
+                            <p class="articulo-en-descuento"><i class="fa-solid fa-tags"></i> 20.63% de descuento</p>
+                        </p>
+                        <button class="boton-agregar" data-id="6"><i class="fa-solid fa-circle-plus"></i> Agregar al carrito</button>
                     </div>
                 </div>
                 <div class="contenedor-producto">
@@ -145,8 +149,11 @@
                             <i class="fa-solid fa-circle-check"></i> Forma Italiana. <br>
                             <i class="fa-solid fa-circle-check"></i> Marca: Estrella.
                         </p>
-                        <p class="info-producto-precio">$242</p>
-                        <button class="boton-agregar">Agregar al carrito</button>
+                        <p class="info-producto-precio">
+                            <del>$242</del> <i class="fa-solid fa-circle-arrow-right"></i> <span class="span">$220</span>
+                        <p class="articulo-en-descuento"><i class="fa-solid fa-tags"></i> 9.09% de descuento</p>
+                        </p>
+                        <button class="boton-agregar" data-id="7"><i class="fa-solid fa-circle-plus"></i> Agregar al carrito</button>
                     </div>
                 </div>
                 <div class="contenedor-producto">
@@ -160,8 +167,8 @@
                             <i class="fa-solid fa-circle-check"></i> Uso rudo. <br>
                             <i class="fa-solid fa-circle-check"></i> Cuchillas Reforzadas 5".
                         </p>
-                        <p class="info-producto-precio">$54</p>
-                        <button class="boton-agregar">Agregar al carrito</button>
+                        <p class="info-producto-precio"><span class="span">$54</span></p>
+                        <button class="boton-agregar" data-id="9"><i class="fa-solid fa-circle-plus"></i> Agregar al carrito</button>
                     </div>
                 </div>
                 <div class="contenedor-producto">
@@ -174,8 +181,8 @@
                             <i class="fa-solid fa-circle-check"></i> Modelo: 502. <br>
                             <i class="fa-solid fa-circle-check"></i> Marca: Pegaso.
                         </p>
-                        <p class="info-producto-precio">$20</p>
-                        <button class="boton-agregar">Agregar al carrito</button>
+                        <p class="info-producto-precio"><span class="span">$20</span></p>
+                        <button class="boton-agregar" data-id="10"><i class="fa-solid fa-circle-plus"></i> Agregar al carrito</button>
                     </div>
                 </div>
                 <div class="contenedor-producto">
@@ -188,8 +195,8 @@
                             <i class="fa-solid fa-circle-check"></i> 6m de largo. <br>
                             <i class="fa-solid fa-circle-check"></i> Marca: Bic.
                         </p>
-                        <p class="info-producto-precio">$39</p>
-                        <button class="boton-agregar">Agregar al carrito</button>
+                        <p class="info-producto-precio"><span class="span">$39</span></p>
+                        <button class="boton-agregar" data-id="11"><i class="fa-solid fa-circle-plus"></i> Agregar al carrito</button>
                     </div>
                 </div>
                 <div class="contenedor-producto">
@@ -202,8 +209,8 @@
                             <i class="fa-solid fa-circle-check"></i> Marcadores de base de agua. <br>
                             <i class="fa-solid fa-circle-check"></i> Punta de cincel.
                         </p>
-                        <p class="info-producto-precio">$50</p>
-                        <button class="boton-agregar">Agregar al carrito</button>
+                        <p class="info-producto-precio"><span class="span">$50</span></p>
+                        <button class="boton-agregar" data-id="12"><i class="fa-solid fa-circle-plus"></i> Agregar al carrito</button>
                     </div>
                 </div>
                 <div class="contenedor-producto">
@@ -216,8 +223,8 @@
                             <i class="fa-solid fa-circle-check"></i> Marcatextos punta de cincel. <br>
                             <i class="fa-solid fa-circle-check"></i> Marca: Vision Junior.
                         </p>
-                        <p class="info-producto-precio">$20</p>
-                        <button class="boton-agregar">Agregar al carrito</button>
+                        <p class="info-producto-precio"><span class="span">$20</span></p>
+                        <button class="boton-agregar" data-id="13"><i class="fa-solid fa-circle-plus"></i> Agregar al carrito</button>
                     </div>
                 </div>
                 <div class="contenedor-producto">
@@ -231,8 +238,8 @@
                             <i class="fa-solid fa-circle-check"></i> De 8 digitos. <br>
                             <i class="fa-solid fa-circle-check"></i> Doble fuente de poder.
                         </p>
-                        <p class="info-producto-precio">$39</p>
-                        <button class="boton-agregar">Agregar al carrito</button>
+                        <p class="info-producto-precio"><span class="span">$39</span></p>
+                        <button class="boton-agregar" data-id="14"><i class="fa-solid fa-circle-plus"></i> Agregar al carrito</button>
                     </div>
                 </div>
                 <div class="contenedor-producto">
@@ -245,8 +252,8 @@
                             <i class="fa-solid fa-circle-check"></i> Modelo: CPP-2. <br>
                             <i class="fa-solid fa-circle-check"></i> Incluye minas extras.
                         </p>
-                        <p class="info-producto-precio">$31</p>
-                        <button class="boton-agregar">Agregar al carrito</button>
+                        <p class="info-producto-precio"><span class="span">$31</span></p>
+                        <button class="boton-agregar" data-id="15"><i class="fa-solid fa-circle-plus"></i> Agregar al carrito</button>
                     </div>
                 </div>
                 <div class="contenedor-producto">
@@ -260,8 +267,8 @@
                             <i class="fa-solid fa-circle-check"></i> Forma triangular. <br>
                             <i class="fa-solid fa-circle-check"></i> Incluye sacapuntas.
                         </p>
-                        <p class="info-producto-precio">$130</p>
-                        <button class="boton-agregar">Agregar al carrito</button>
+                        <p class="info-producto-precio"><span class="span">$130</span></p>
+                        <button class="boton-agregar" data-id="16"><i class="fa-solid fa-circle-plus"></i> Agregar al carrito</button>
                     </div>
                 </div>
                 <div class="contenedor-producto">
@@ -273,8 +280,8 @@
                         <p class="info-producto-des">
                             <i class="fa-solid fa-circle-check"></i> Contenido: 12 Crayones Jumbo.
                         </p>
-                        <p class="info-producto-precio">$48</p>
-                        <button class="boton-agregar">Agregar al carrito</button>
+                        <p class="info-producto-precio"><span class="span">$48</span></p>
+                        <button class="boton-agregar" data-id="17"><i class="fa-solid fa-circle-plus"></i> Agregar al carrito</button>
                     </div>
                 </div>
                 <div class="contenedor-producto">
@@ -287,8 +294,8 @@
                             <i class="fa-solid fa-circle-check"></i> Contenido: 12 piezas. <br>
                             <i class="fa-solid fa-circle-check"></i> Colorpeps Ocean.
                         </p>
-                        <p class="info-producto-precio">$58</p>
-                        <button class="boton-agregar">Agregar al carrito</button>
+                        <p class="info-producto-precio"><span class="span">$58</span></p>
+                        <button class="boton-agregar" data-id="18"><i class="fa-solid fa-circle-plus"></i> Agregar al carrito</button>
                     </div>
                 </div>
                 <div class="contenedor-producto">
@@ -301,7 +308,10 @@
                             <i class="fa-solid fa-circle-check"></i> Regla de plastico. <br>
                             <i class="fa-solid fa-circle-check"></i> 30cm de largo.
                         </p>
-                        <p class="info-producto-precio">$19</p>
+                        <p class="info-producto-precio">
+                            <del>$19</del> <i class="fa-solid fa-circle-arrow-right"></i> <span class="span">$10</span>
+                        <p class="articulo-en-descuento"><i class="fa-solid fa-tags"></i> 47.36% de descuento</p>
+                        </p>
                         <button class="boton-agregar">Agregar al carrito</button>
                     </div>
                 </div>
@@ -315,8 +325,11 @@
                             <i class="fa-solid fa-circle-check"></i> Tijera escolar. <br>
                             <i class="fa-solid fa-circle-check"></i> Punta Roma.
                         </p>
-                        <p class="info-producto-precio">$15</p>
-                        <button class="boton-agregar">Agregar al carrito</button>
+                        <p class="info-producto-precio">
+                            <del>$15</del> <i class="fa-solid fa-circle-arrow-right"></i> <span class="span">$10</span>
+                        <p class="articulo-en-descuento"><i class="fa-solid fa-tags"></i> 33.33% de descuento</p>
+                        </p>
+                        <button class="boton-agregar" data-id="20"><i class="fa-solid fa-circle-plus"></i> Agregar al carrito</button>
                     </div>
                 </div>
                 <div class="contenedor-producto">
@@ -329,8 +342,8 @@
                             <i class="fa-solid fa-circle-check"></i> Tinta ultrasuave. <br>
                             <i class="fa-solid fa-circle-check"></i> Paquete de 12 piezas.
                         </p>
-                        <p class="info-producto-precio">$70</p>
-                        <button class="boton-agregar">Agregar al carrito</button>
+                        <p class="info-producto-precio"><span class="span">$70</span></p>
+                        <button class="boton-agregar" data-id="21"><i class="fa-solid fa-circle-plus"></i> Agregar al carrito</button>
                     </div>
                 </div>
                 <div class="contenedor-producto">
@@ -344,8 +357,8 @@
                             <i class="fa-solid fa-circle-check"></i> Punta fina. <br>
                             <i class="fa-solid fa-circle-check"></i> Marca: PoinPoint.
                         </p>
-                        <p class="info-producto-precio">$70</p>
-                        <button class="boton-agregar">Agregar al carrito</button>
+                        <p class="info-producto-precio"><span class="span">$70</span></p>
+                        <button class="boton-agregar" data-id="22"><i class="fa-solid fa-circle-plus"></i> Agregar al carrito</button>
                     </div>
                 </div>
                 <div class="contenedor-producto">
@@ -358,8 +371,11 @@
                             <i class="fa-solid fa-circle-check"></i> El clasico Bic Mediano. <br>
                             <i class="fa-solid fa-circle-check"></i> Paquete de 12 piezas.
                         </p>
-                        <p class="info-producto-precio">$70</p>
-                        <button class="boton-agregar">Agregar al carrito</button>
+                        <p class="info-producto-precio">
+                            <del>$70</del> <i class="fa-solid fa-circle-arrow-right"></i> <span class="span">$55</span>
+                        <p class="articulo-en-descuento"><i class="fa-solid fa-tags"></i> 21.42% de descuento</p>
+                        </p>
+                        <button class="boton-agregar" data-id="23"><i class="fa-solid fa-circle-plus"></i> Agregar al carrito</button>
                     </div>
                 </div>
                 <div class="contenedor-producto">
@@ -373,8 +389,11 @@
                             <i class="fa-solid fa-circle-check"></i> +1 de regalo. <br>
                             <i class="fa-solid fa-circle-check"></i> Boligrafros punta fina.
                         </p>
-                        <p class="info-producto-precio">$70</p>
-                        <button class="boton-agregar">Agregar al carrito</button>
+                        <p class="info-producto-precio">
+                            <del>$70</del> <i class="fa-solid fa-circle-arrow-right"></i> <span class="span">$55</span>
+                        <p class="articulo-en-descuento"><i class="fa-solid fa-tags"></i> 21.42% de descuento</p>
+                        </p>
+                        <button class="boton-agregar" data-id="24"><i class="fa-solid fa-circle-plus"></i> Agregar al carrito</button>
                     </div>
                 </div>
             </nav>
@@ -382,8 +401,22 @@
 
     </main>
     
-    <footer class="footer">
-        HOLA
+    <footer class="footer" id="sobre-nosotros">
+        <div class="footer-left">
+		<img src="imagenes/MaxPrint.png" class="logo-img" alt="Logo MaxPrint LZC">
+	</div>
+	<div class="footer-right">
+        	<p><a href="https://www.google.com/maps/place/Max+print+Lzc/@17.9742529,-102.2349061,17z/data=!4m6!3m5!1s0x84315cc26c51bce3:0x583ccc7472f265eb!8m2!3d17.9742478!4d-102.2323312!16s%2Fg%2F11g6xqvt5w?entry=ttu" target=”_blank”>Dir: Av. Melchor Ocampo 112 3 Emiliano Zapata, Lázaro Cárdenas, Mich.</a></p>
+		<p><a href="mailto:maxprint_lzc@hotmail.com?Subject=">maxprint_lzc@hotmail.com</a></p>
+		<p>Tel. (753) 105 58 82</p>
+		<p>Redes Sociales:</p>
+		<div class="footer-redes">
+                	<a href="https://www.facebook.com/maxprintlzc"><img src="imagenes/faceicon.png" alt="Facebook icon"></a>
+		</div>
+		<p><a href="#">Politicas de privacidad</a></p>
+        	<p><a>Servicio al cliente</a></p>
+	</div>
     </footer>
+    <script src="javascript/main.js"></script>
 </body>
 </html>

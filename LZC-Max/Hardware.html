@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Max Print - LZC</title>
+    <title>Max Print - LZC (Hardware)</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" type="text/css" href="styles/styles-categorias.css">
     <link rel="stylesheet" href="styles/styles-events.css">
@@ -24,12 +24,12 @@
                 <nav class="opciones-header">
                     <div class="opciones-header-btn">
                         <a href="index.html"><i class="fa-solid fa-house"></i>Regresar a Inicio</a>
-                        <a href="#"><i class="fa-solid fa-circle-info"></i>Sobre Nosotros</a>
+                        <a href="#sobre-nosotros"><i class="fa-solid fa-circle-info"></i>Sobre Nosotros</a>
                     </div>
                     <div class="opciones-header-text">
                         <p>
                             <i class="fa-solid fa-circle-check"></i>Tenemos todo lo que necesitas en reparacion de copiadoras de todas las marcas!<br>
-                            <i class="fa-solid fa-circle-check"></i>Ofrecemos venta de toner originales y genericos! <a href="#">Consulta mas...</a>
+                            <i class="fa-solid fa-circle-check"></i>Ofrecemos venta de toner originales y genericos!
                         </p>
                     </div>
                 </nav>
@@ -39,6 +39,7 @@
                                 <li class="submenu">
                                     <i class="fa-solid fa-cart-shopping"></i>
                                     <p>Carrito</p>
+                                    <i class="fa-solid fa-angle-down"></i>
                                     <div id="carrito">
                                         <table id="lista-carrito">
                                             <thead>
@@ -72,12 +73,12 @@
                 <a href="Stationery.html" class="text-b-p2"><i class="fa-solid fa-pencil"></i>Papeleria</a>
             </div>
             <div class="banner-p2 banner-sec">
-                <a href="#" class="text-b-p2"><i class="fa-solid fa-tags"></i>Ofertas!</a>
+                <a href="OnSales.html" class="text-b-p2"><i class="fa-solid fa-tags"></i>Ofertas!</a>
             </div>
         </nav>
         <nav class="banner-marcas">
             <div class="text-principal">
-                <a href="#"><i class="fa-solid fa-circle-info"></i> Nuestras marcas </a>
+                <a href="#nuestras-marcas"><i class="fa-solid fa-circle-info"></i> Nuestras marcas </a>
             </div>
             <div class="text-secundario">
                 <p>Ofrecemos productos de diversas marcas</p>
@@ -108,7 +109,7 @@
                     <p class="seccion-descripcion"><i class="fa-solid fa-circle-check"></i>Todo lo que necesitas para el mantenimiento de tu PC esta aqui.<br>
                     </p>
                 </div>
-                <div class="seccion-marcas">
+                <div class="seccion-marcas" id="nuestras-marcas">
                     <div class="marca"><img src="imagenes/A adata logo.jpg" alt="Marca 'ADATA' "></div>
                     <div class="marca"><img src="imagenes/A kingston logo-3.jpg" alt="Marca 'Kingston'"></div>
                     <div class="marca"><img src="imagenes/A logitech logo-2.jpg" alt="Marca 'Logitech'"></div>
@@ -118,7 +119,7 @@
             </nav>
         </section>
         <section class="contenedor-3">
-            <nav class="productos-hardware">
+            <nav class="productos-hardware" id="productos">
                 <div class="contenedor-producto">
                 <div class="imagen-producto">
                     <img class="img" src="img-productos/Producto (31).jpg">
@@ -130,8 +131,11 @@
                         <i class="fa-solid fa-circle-check"></i> 16 GB de almacenamiento. <br>
                         <i class="fa-solid fa-circle-check"></i> Marca: Adata
                     </p>
-                    <p class="info-producto-precio">$120</p>
-                    <button class="boton-agregar"><i class="fa-solid fa-circle-plus"></i> Agregar al carrito</button>
+                    <p class="info-producto-precio">
+                        <del>$120</del> <i class="fa-solid fa-circle-arrow-right"></i> <span class="span">$100</span>
+                        <p class="articulo-en-descuento"><i class="fa-solid fa-tags"></i> 16.66% de descuento</p>
+                    </p>
+                    <button class="boton-agregar" data-id="31"><i class="fa-solid fa-circle-plus"></i> Agregar al carrito</button>
                 </div>
             </div>
             <div class="contenedor-producto">
@@ -145,8 +149,11 @@
                         <i class="fa-solid fa-circle-check"></i> 32 GB de almacenamiento. <br>
                         <i class="fa-solid fa-circle-check"></i> Marca: Kingstone.
                     </p>
-                    <p class="info-producto-precio">$140</p>
-                    <button class="boton-agregar"><i class="fa-solid fa-circle-plus"></i> Agregar al carrito</button>
+                    <p class="info-producto-precio">
+                        <del>$140</del> <i class="fa-solid fa-circle-arrow-right"></i> <span class="span">$120</span>
+                        <p class="articulo-en-descuento"><i class="fa-solid fa-tags"></i> 14.28% de descuento</p>
+                    </p>
+                    <button class="boton-agregar" data-id="1"><i class="fa-solid fa-circle-plus"></i> Agregar al carrito</button>
                 </div>
             </div>
             <div class="contenedor-producto">
@@ -159,8 +166,8 @@
                         <i class="fa-solid fa-circle-check"></i> Tinta PTC 190B. <br>
                         <i class="fa-solid fa-circle-check"></i> Cont. Neto: 140mL ET.
                     </p>
-                    <p class="info-producto-precio">$160</p>
-                    <button class="boton-agregar"><i class="fa-solid fa-circle-plus"></i> Agregar al carrito</button>
+                    <p class="info-producto-precio"><span class="span">$160</span></p>
+                    <button class="boton-agregar" data-id="2"><i class="fa-solid fa-circle-plus"></i> Agregar al carrito</button>
                 </div>
             </div>
             <div class="contenedor-producto">
@@ -173,8 +180,11 @@
                         <i class="fa-solid fa-circle-check"></i> Modelo: BT D60 BK. <br>
                         <i class="fa-solid fa-circle-check"></i> Cont. Neto: 108mL.
                     </p>
-                    <p class="info-producto-precio">$207</p>
-                    <button class="boton-agregar"><i class="fa-solid fa-circle-plus"></i> Agregar al carrito</button>
+                    <p class="info-producto-precio">
+                        <del>$207</del> <i class="fa-solid fa-circle-arrow-right"></i> <span class="span">$190</span>
+                        <p class="articulo-en-descuento"><i class="fa-solid fa-tags"></i> 8.21% de descuento</p>
+                    </p>
+                    <button class="boton-agregar" data-id="3"><i class="fa-solid fa-circle-plus"></i> Agregar al carrito</button>
                 </div>
             </div>
             <div class="contenedor-producto">
@@ -187,8 +197,11 @@
                         <i class="fa-solid fa-circle-check"></i> Modelo: 544. <br>
                         <i class="fa-solid fa-circle-check"></i> Colores: Rosa, Amarillo, Azul, Negro.
                     </p>
-                    <p class="info-producto-precio">$250</p>
-                    <button class="boton-agregar"><i class="fa-solid fa-circle-plus"></i> Agregar al carrito</button>
+                    <p class="info-producto-precio">
+                        <del>$250</del> <i class="fa-solid fa-circle-arrow-right"></i> <span class="span">$200</span>
+                        <p class="articulo-en-descuento"><i class="fa-solid fa-tags"></i> 20% de descuento</p>
+                    </p>
+                    <button class="boton-agregar" data-id="4"><i class="fa-solid fa-circle-plus"></i> Agregar al carrito</button>
                 </div>
             </div>
             <div class="contenedor-producto">
@@ -201,8 +214,8 @@
                         <i class="fa-solid fa-circle-check"></i> Modelo: 504. <br>
                         <i class="fa-solid fa-circle-check"></i> Colores: Rosa, Amarillo, Azul, Negro.
                     </p>
-                    <p class="info-producto-precio">$306</p>
-                    <button class="boton-agregar"><i class="fa-solid fa-circle-plus"></i> Agregar al carrito</button>
+                    <p class="info-producto-precio"><span class="span">$306</span></p>
+                    <button class="boton-agregar" data-id="5"><i class="fa-solid fa-circle-plus"></i> Agregar al carrito</button>
                 </div>
             </div>
 
@@ -216,8 +229,8 @@
                         <i class="fa-solid fa-circle-check"></i> Limpiador de circuitos <br>
                         <i class="fa-solid fa-circle-check"></i> Cont. Neto: 1L.
                     </p>
-                    <p class="info-producto-precio">$180</p>
-                    <button class="boton-agregar"><i class="fa-solid fa-circle-plus"></i> Agregar al carrito</button>
+                    <p class="info-producto-precio"><span class="span">$180</span></p>
+                    <button class="boton-agregar" data-id="8"><i class="fa-solid fa-circle-plus"></i> Agregar al carrito</button>
                 </div>
             </div>
             <div class="contenedor-producto">
@@ -230,8 +243,8 @@
                         <i class="fa-solid fa-circle-check"></i> Modelo: STS-116L. <br>
                         <i class="fa-solid fa-circle-check"></i> Color: Negro.
                     </p>
-                    <p class="info-producto-precio">$580</p>
-                    <button class="boton-agregar"><i class="fa-solid fa-circle-plus"></i> Agregar al carrito</button>
+                    <p class="info-producto-precio"><span class="span">$580</span></p>
+                    <button class="boton-agregar" data-id="25"><i class="fa-solid fa-circle-plus"></i> Agregar al carrito</button>
                 </div>
             </div>
             <div class="contenedor-producto">
@@ -244,8 +257,8 @@
                         <i class="fa-solid fa-circle-check"></i> Modelo: AT-SAM111SNV. <br>
                         <i class="fa-solid fa-circle-check"></i> Color: Negro.
                     </p>
-                    <p class="info-producto-precio">$550</p>
-                    <button class="boton-agregar"><i class="fa-solid fa-circle-plus"></i> Agregar al carrito</button>
+                    <p class="info-producto-precio"><span class="span">$550</span></p>
+                    <button class="boton-agregar" data-id="26"><i class="fa-solid fa-circle-plus"></i> Agregar al carrito</button>
                 </div>
             </div>
             <div class="contenedor-producto">
@@ -258,8 +271,8 @@
                         <i class="fa-solid fa-circle-check"></i> Modelo PTB-TN880. <br>
                         <i class="fa-solid fa-circle-check"></i> Color: Negro.
                     </p>
-                    <p class="info-producto-precio">$895</p>
-                    <button class="boton-agregar"><i class="fa-solid fa-circle-plus"></i> Agregar al carrito</button>
+                    <p class="info-producto-precio"><span class="span">$895</span></p>
+                    <button class="boton-agregar" data-id="27"><i class="fa-solid fa-circle-plus"></i> Agregar al carrito</button>
                 </div>
             </div>
             <div class="contenedor-producto">
@@ -272,8 +285,8 @@
                         <i class="fa-solid fa-circle-check"></i> Aire comprimido <br>
                         <i class="fa-solid fa-circle-check"></i> Cont. Neto: 330 mL.
                     </p>
-                    <p class="info-producto-precio">$88</p>
-                    <button class="boton-agregar"><i class="fa-solid fa-circle-plus"></i> Agregar al carrito</button>
+                    <p class="info-producto-precio"><span class="span">$88</span></p>
+                    <button class="boton-agregar" data-id="28"><i class="fa-solid fa-circle-plus"></i> Agregar al carrito</button>
                 </div>
             </div>
             <div class="contenedor-producto">
@@ -287,8 +300,8 @@
                         <i class="fa-solid fa-circle-check"></i> Alta velocidad de transferencia. <br>
                         <i class="fa-solid fa-circle-check"></i> 1 Metro de largo.
                     </p>
-                    <p class="info-producto-precio">$126</p>
-                    <button class="boton-agregar"><i class="fa-solid fa-circle-plus"></i> Agregar al carrito</button>
+                    <p class="info-producto-precio"><span class="span">$126</span></p>
+                    <button class="boton-agregar" data-id="29"><i class="fa-solid fa-circle-plus"></i> Agregar al carrito</button>
                 </div>
             </div>
             <div class="contenedor-producto">
@@ -301,8 +314,8 @@
                         <i class="fa-solid fa-circle-check"></i> Modelo: H151. <br>
                         <i class="fa-solid fa-circle-check"></i> Con microfono.
                     </p>
-                    <p class="info-producto-precio">$348</p>
-                    <button class="boton-agregar"><i class="fa-solid fa-circle-plus"></i> Agregar al carrito</button>
+                    <p class="info-producto-precio"><span class="span">$348</span></p>
+                    <button class="boton-agregar" data-id="30"><i class="fa-solid fa-circle-plus"></i> Agregar al carrito</button>
                 </div>
             </div>
             <div class="contenedor-producto">
@@ -314,8 +327,8 @@
                     <p class="info-producto-des">
                         <i class="fa-solid fa-circle-check"></i> Modelo: M110 Silent.
                     </p>
-                    <p class="info-producto-precio">$172</p>
-                    <button class="boton-agregar"><i class="fa-solid fa-circle-plus"></i> Agregar al carrito</button>
+                    <p class="info-producto-precio"><span class="span">$172</span></p>
+                    <button class="boton-agregar" data-id="32"><i class="fa-solid fa-circle-plus"></i> Agregar al carrito</button>
                 </div>
             </div>
             </nav>
@@ -323,8 +336,22 @@
 
     </main>
     
-    <footer class="footer">
-
+    <footer class="footer" id="sobre-nosotros">
+        <div class="footer-left">
+		<img src="imagenes/MaxPrint.png" class="logo-img" alt="Logo MaxPrint LZC">
+	</div>
+	<div class="footer-right">
+        	<p><a href="https://www.google.com/maps/place/Max+print+Lzc/@17.9742529,-102.2349061,17z/data=!4m6!3m5!1s0x84315cc26c51bce3:0x583ccc7472f265eb!8m2!3d17.9742478!4d-102.2323312!16s%2Fg%2F11g6xqvt5w?entry=ttu" target=”_blank”>Dir: Av. Melchor Ocampo 112 3 Emiliano Zapata, Lázaro Cárdenas, Mich.</a></p>
+		<p><a href="mailto:maxprint_lzc@hotmail.com?Subject=">maxprint_lzc@hotmail.com</a></p>
+		<p>Tel. (753) 105 58 82</p>
+		<p>Redes Sociales:</p>
+		<div class="footer-redes">
+                	<a href="https://www.facebook.com/maxprintlzc"><img src="imagenes/faceicon.png" alt="Facebook icon"></a>
+		</div>
+		<p><a href="#">Politicas de privacidad</a></p>
+        	<p><a>Servicio al cliente</a></p>
+	</div>
     </footer>
+    <script src="javascript/main.js"></script>
 </body>
 </html>

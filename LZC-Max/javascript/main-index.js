@@ -1,5 +1,5 @@
 const carrito = document.querySelector('#carrito');
-const listaMuebles = document.querySelector('#productos');
+const listaMuebles = document.querySelector('#nuestros-apartados');
 const contenedorCarrito = document.querySelector('#lista-carrito tbody');
 const vaciarCarritoBtn = document.querySelector('#vaciar-carrito');
 let articulosCarrito = [];
@@ -30,12 +30,13 @@ function cargarEventListeners() {
 // Funcion que añade el mueble al carrito
 function agregarMueble(e){
 	// Delegation para agregar-carrito
-	console.log("agregado")
-	e.preventDefault();
 	if(e.target.classList.contains('boton-agregar')) {
 		const mueble = e.target.parentElement.parentElement; //Va al class=“card” o class=“contenedor-producto” 
 		// Enviamos el mueble seleccionado para tomar sus datos
 		leerDatosMueble(mueble);
+	}
+	if(!(e.target.classList.contains('text-explorar-mas'))){
+		e.preventDefault();
 	}
 }
 
@@ -44,7 +45,7 @@ function leerDatosMueble(mueble) {
 
 	const infoMueble = {
 		imagen: mueble.querySelector('.imagen-producto').querySelector('.img').src,
-		titulo: mueble.querySelector('.info-producto').querySelector('.info-nombre-producto').textContent,
+		titulo: mueble.querySelector('.info-producto').querySelector('.info-producto-nombre').textContent,
 		precio: mueble.querySelector('.info-producto').querySelector('.info-producto-precio').querySelector('span').textContent,
 		id: mueble.querySelector('button').getAttribute('data-id'),
 		cantidad: 1
@@ -128,7 +129,7 @@ function sincronizarStorge() {
 
 function vaciarCarrito() {
 	// forma lenta
-	console.log(contenedorCarrito.firstChild);
+	// console.log(contenedorCarrito.firstChild);
 	//contenedorCarrito.innerHTML = '';
 
 	//forma rapida

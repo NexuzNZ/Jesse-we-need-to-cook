@@ -10,10 +10,26 @@ html {
 	scroll-behavior: smooth;
 }
 
+/* Pagina ofertas (Css especial) */
+.info-producto-precio i {
+    color: green;
+    font-size: 20px;
+}
+
+.info-producto-precio del {
+    font-size: 20px;
+}
+
+.articulo-en-descuento {
+    font-size: 10px;
+    color: green;
+}
+
 
 .cabecera {
     background: rgb(26, 165, 19);  /* fallback for old browsers */
-	background: -webkit-linear-gradient(to bottom, #414345, #232526);  /* Chrome 10-25, Safari 5.1-6 */
+	background-image: linear-gradient(to right, rgb(126, 230, 85), #393 66%, #393 100%);
+	/* background: -webkit-linear-gradient(to bottom, #414345, #232526);   Chrome 10-25, Safari 5.1-6 */
 	height: 100px;
 	display: flex;
 	justify-content: flex-start;
@@ -468,6 +484,25 @@ html {
     background-color: yellow;
 }
 
+.ir-a-carrito-div {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    padding-right: 30px;
+}
+
+.ir-a-carrito {
+    background-color: yellow;
+    padding: 15px;
+    border-radius: 30px;
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    border: 3px solid transparent;
+}
+
 /* Productos */
 /* Productos: Papeleria*/
 .apartado-papeleria {
@@ -805,3 +840,124 @@ html {
     display: flex;
     align-items: center;
 }
+
+.footer-right{
+    padding: 50px;
+}
+
+.footer-right p{
+    font-family: "Poppins";
+}
+
+.footer-right a{
+    text-decoration: none;
+}
+        
+.footer-left{
+    padding: 50px;
+}
+
+.footer-left img{
+    filter: hue-rotate(180deg) saturate(0) brightness(0.5);
+}
+
+
+/** Carrito **/
+@media (min-width: 768px) {
+    .max-width-30 {
+        max-width: 30rem;
+    }
+}
+
+.submenu {
+    position: relative;
+}
+
+.submenu #carrito {
+    display: none;
+}
+
+.boton {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #e1e1e1;
+}
+
+.submenu:hover #carrito {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 100%;
+    z-index: 1;
+    background-color: white;
+    padding: 20px;
+    min-height: 500px;
+    min-width: 300px;
+}
+
+th,
+td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: #e1e1e1;
+}
+
+th:first-child,
+td:first-child {
+    padding-left: 0;
+}
+
+th:last-child,
+td:last-child {
+    padding-right: 0;
+}
+
+.card {
+    display: block;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 300px;
+    background-color: #037bc0;
+    margin: 20px;
+    font-size: 18px;
+    text-align: center;
+    color: #e1e1e1;
+}
+
+.navegacion {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.submenu {
+    display: flex;
+}
+
+.submenu p {
+    font-family: "Poppins", sans-serif;
+    padding-left: 5px;
+    color: white;
+}
+
+.navegacion i {
+    font-size: 25px;
+    color: white;
+}
+
+/*
+a:link, a:visited {
+  color: (internal value);
+  text-decoration: underline;
+  cursor: auto;
+}
+
+a:link:active, a:visited:active {
+  color: (internal value);
+}
+*/

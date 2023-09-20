@@ -9,7 +9,7 @@
     <link rel="stylesheet" type="text/css" href="styles/styles-events.css">
 </head>
 <body>
-    <section class="contenedor-1">
+    <section class="contenedor-1" id="ir-carrito">
         <header class="cabecera">
             <nav class="navegacion-principal">
                 <div class="logo">
@@ -36,11 +36,27 @@
                 </nav>
                 <nav class="iconos-header">
                     <div class="navegacion">
-                        <ul>
-                            <li class="submenu">
-                                
-                            </li>
-                        </ul>
+                    <ul>
+					<li class="submenu">
+						<i class="fa-solid fa-cart-shopping"></i>
+                        <p>Carrito</p>
+                        <i class="fa-solid fa-angle-down"></i>
+						<div id="carrito">
+							<table id="lista-carrito">
+							<thead>
+								<tr>
+									<th>Imagen</th>
+									<th>Nombre</th>
+									<th>Precio</th>
+									<th>Cantidad</th>
+								</tr>
+							</thead>
+							<tbody></tbody> <!--Aqui se pone todo el cuerpo de la tabla,con la funcion de "agregar al carrito"-->
+					        </table>
+					        <a href="#" class="boton" id="vaciar-carrito">Vaciar Carrito</a>
+					    </div>
+				    </li>	
+				    </ul>
                     </div>
                 </nav>
             </nav>
@@ -58,7 +74,7 @@
                 <a href="Stationery.html" class="texto-banner"><i class="fa-solid fa-pencil"></i>Papeleria</a>
             </div>
             <div class="banner-sec">
-                <a href="#" class="texto-banner"><i class="fa-solid fa-tags"></i>Ofertas!</a>
+                <a href="OnSales.html" class="texto-banner"><i class="fa-solid fa-tags"></i>Ofertas!</a>
             </div>
         </nav>
         <nav class="banner-marcas">
@@ -77,7 +93,6 @@
             </div>
         </nav>
     </section>
-
     <main>
         <section class="contenedor-2">
             
@@ -168,8 +183,15 @@
                 </nav>
             </nav>
         </section>
+        <div class="ir-a-carrito-div">
+            <a class="ir-a-carrito" href="#ir-carrito">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <span>Ir a carrito</span>
+                <i class="fa-solid fa-circle-arrow-up"></i>
+            </a>
+        </div>
         <section class="contenedor-5" id="tienda-online">
-            <nav class="nuestros-apartados">
+            <nav class="nuestros-apartados" id="nuestros-apartados">
                 <div class="titulo-tienda-online">
                     <p class="titulo-TO"><i class="fa-solid fa-shop"></i> Tienda Online</p>
                     <p class="subtitulo-TO"><i class="fa-solid fa-circle-info"></i> Bienvenido a nuestra tienda online</p>
@@ -183,13 +205,14 @@
                         <div class="icono-papeleria-4"><i class="fa-solid fa-pencil"></i></div>
                         <div class="icono-hardware-4"><i class="fa-brands fa-usb"></i></div>
                         <div class="icono-ofertas-4"><i class="fa-solid fa-tags"></i></div>
+                        
                     </div>
                 </div>
                 <div class="apartado-papeleria">
                     <div class="banner-apartado-papeleria">
                         <div class="titulo-apartado-papeleria">
-                            <a href="Stationery.html" class="apartado-T1 T1-Papeleria"><i class="fa-solid fa-caret-right"></i> Papeleria</a>
-                            <a href="Stationery.html" class="apartado-T2 T2-Papeleria">> Seccion: Productos "<i class="fa-solid fa-pencil"></i> Papeleria <i class="fa-solid fa-shop"></i> "</a>
+                            <a href="Stationery.html" class="apartado-T1 T1-Papeleria" id="Link"><i class="fa-solid fa-caret-right"></i> Papeleria</a>
+                            <a href="Stationery.html" class="apartado-T2 T2-Papeleria" id="Link">> Seccion: Productos "<i class="fa-solid fa-pencil"></i> Papeleria <i class="fa-solid fa-shop"></i> "</a>
                         </div>
                         <div class="icono-apartado-papeleria-div">
                             <div class="icono-apartado-papeleria">
@@ -208,8 +231,8 @@
                                     <i class="fa-solid fa-circle-check"></i> Tinta ultrasuave.<br>
                                     <i class="fa-solid fa-circle-check"></i> Paquete de 12 piezas.
                                 </p>
-                                <p class="info-producto-precio">$70</p>
-                                <button class="boton-agregar"><i class="fa-solid fa-circle-plus"></i> Agregar al carrito</button>
+                                <p class="info-producto-precio"><span class="span">$70</span></p>
+                                <button class="boton-agregar" data-id="21"><i class="fa-solid fa-circle-plus"></i> Agregar al carrito</button>
                             </div>
                         </div>
                         <div class="contenedor-producto">
@@ -222,23 +245,23 @@
                                     <i class="fa-solid fa-circle-check"></i> Tijera escolar.<br>
                                     <i class="fa-solid fa-circle-check"></i> Punta roma.
                                 </p>
-                                <p class="info-producto-precio">$15</p>
-                                <button class="boton-agregar"><i class="fa-solid fa-circle-plus"></i> Agregar al carrito</button>
+                                <p class="info-producto-precio"><span class="span">$15</span></p>
+                                <button class="boton-agregar" data-id="20"><i class="fa-solid fa-circle-plus"></i> Agregar al carrito</button>
                             </div>
                         </div>
                         <div class="contenedor-producto">
                             <div class="imagen-producto">
-                                <img class="img" src="img-productos/Producto (24).jpg" alt="producto-3">
+                                <img class="img" src="img-productos/Producto (22).jpg" alt="producto-3">
                             </div>
                             <div class="info-producto">
-                                <p class="info-producto-nombre">Boligrafos Bic Cristal Precision</p>
+                                <p class="info-producto-nombre">Boligrafos PinPoint</p>
                                 <p class="info-producto-des">
                                     <i class="fa-solid fa-circle-check"></i> Paquete de 12 piezas. <br>
-                                    <i class="fa-solid fa-circle-check"></i> +1 de regalo. <br>
-                                    <i class="fa-solid fa-circle-check"></i> Boligrafos punta fina.
+                                    <i class="fa-solid fa-circle-check"></i> Punta fina. <br>
+                                    <i class="fa-solid fa-circle-check"></i> Marca: PoinPoint.
                                 </p>
-                                <p class="info-producto-precio">$70</p>
-                                <button class="boton-agregar"><i class="fa-solid fa-circle-plus"></i> Agregar al carrito</button>
+                                <p class="info-producto-precio"><span class="span">$70</span></p>
+                                <button class="boton-agregar" data-id="22"><i class="fa-solid fa-circle-plus"></i> Agregar al carrito</button>
                             </div>
                         </div>
                         <div class="explorar-mas">
@@ -265,16 +288,16 @@
                         <div class="productos-papeleria-P">
                             <div class="contenedor-producto">
                                 <div class="imagen-producto">
-                                    <img class="img" src="img-productos/Producto (31).jpg" alt="producto-1">
+                                    <img class="img" src="img-productos/Producto (5).jpg" alt="producto-1">
                                 </div>
                                 <div class="info-producto">
-                                    <p class="info-producto-nombre">Memoria USB Adata</p>
+                                    <p class="info-producto-nombre">Tinta EPSON</p>
                                     <p class="info-producto-des">
-                                        <i class="fa-solid fa-circle-check"></i> Modelo UV250 Classic.<br>
-                                        <i class="fa-solid fa-circle-check"></i> 16 GB de almacenamineto.
+                                        <i class="fa-solid fa-circle-check"></i> Modelo: 504.<br>
+                                        <i class="fa-solid fa-circle-check"></i> Colores: Rosa, Amarillo, Azul, Negro.
                                     </p>
-                                    <p class="info-producto-precio">$120</p>
-                                    <button class="boton-agregar"><i class="fa-solid fa-circle-plus"></i> Agregar al carrito</button>
+                                    <p class="info-producto-precio"><span class="span">$306</span></p>
+                                    <button class="boton-agregar" data-id="5"><i class="fa-solid fa-circle-plus"></i> Agregar al carrito</button>
                                 </div>
                             </div>
                             <div class="contenedor-producto">
@@ -287,8 +310,8 @@
                                         <i class="fa-solid fa-circle-check"></i> Limpiador de circuitos.<br>
                                         <i class="fa-solid fa-circle-check"></i> Cont. neto: 1 Litro.
                                     </p>
-                                    <p class="info-producto-precio">$180</p>
-                                    <button class="boton-agregar"><i class="fa-solid fa-circle-plus"></i> Agregar al carrito</button>
+                                    <p class="info-producto-precio"><span class="span">$180</span></p>
+                                    <button class="boton-agregar" data-id="8"><i class="fa-solid fa-circle-plus"></i> Agregar al carrito</button>
                                 </div>
                             </div>
                             <div class="contenedor-producto">
@@ -301,8 +324,8 @@
                                         <i class="fa-solid fa-circle-check"></i> Tinta PTC 190B. <br>
                                         <i class="fa-solid fa-circle-check"></i> Cont. neto: 140mL ET. <br>
                                     </p>
-                                    <p class="info-producto-precio">$160</p>
-                                    <button class="boton-agregar"><i class="fa-solid fa-circle-plus"></i> Agregar al carrito</button>
+                                    <p class="info-producto-precio"><span class="span">$160</span></p>
+                                    <button class="boton-agregar" data-id="2"><i class="fa-solid fa-circle-plus"></i> Agregar al carrito</button>
                                 </div>
                             </div>
                             <div class="explorar-mas">
@@ -317,7 +340,7 @@
                 <div class="apartado-ofertas">
                     <div class="banner-apartado-ofertas">
                         <div class="titulo-apartado-ofertas">
-                            <a href="#" class="apartado-T1 T1-Ofertas"><i class="fa-solid fa-caret-right"></i> Ofertas</a>
+                            <a href="OnSales.html" class="apartado-T1 T1-Ofertas"><i class="fa-solid fa-caret-right"></i> Ofertas</a>
                             <a href="#" class="apartado-T2 T2-Ofertas"><i class="fa-solid fa-tags"></i> Conoces todas nuestras ofertas en productos de hardware y papeleria <i class="fa-solid fa-circle-check"></i></a>
                         </div>
                         <div class="icono-apartado-ofertas-div">
@@ -329,17 +352,42 @@
                     <div class="productos-P">
                         <div class="productos-papeleria-P">
                             <div class="contenedor-producto">
+                                
+				<div class="imagen-producto">
+                        <img class="img" src="img-productos/Producto (6).jpg">
+                    </div>
+                    <div class="info-producto">
+                        <p class="info-producto-nombre">Libreta Scribe</p>
+                        <p class="info-producto-des">
+                            <i class="fa-solid fa-circle-check"></i> Modelo: Serie 3. <br>
+                            <i class="fa-solid fa-circle-check"></i> Marca: Scribe. <br>
+                            <i class="fa-solid fa-circle-check"></i> De: Raya, Cuadro, Cuadro chico.
+                        </p>
+                        <p class="info-producto-precio">
+                            <del>$63</del> <i class="fa-solid fa-circle-arrow-right"></i> <span class="span">$50</span>
+                            <p class="articulo-en-descuento"><i class="fa-solid fa-tags"></i> 20.63% de descuento</p>
+                        </p>
+                        <button class="boton-agregar" data-id="6"><i class="fa-solid fa-circle-plus"></i> Agregar al carrito</button>
+                    </div>
+				
+				
+                            </div>
+                            <div class="contenedor-producto">
                                 <div class="imagen-producto">
-                                    <img class="img" src="img-productos/Producto (31).jpg" alt="producto-1">
+                                    <img class="img" src="img-productos/Producto (24).jpg" alt="producto-3">
                                 </div>
                                 <div class="info-producto">
-                                    <p class="info-producto-nombre">Memoria USB Adata</p>
+                                    <p class="info-producto-nombre">Boligrafos Bic Cristal Precision</p>
                                     <p class="info-producto-des">
-                                        <i class="fa-solid fa-circle-check"></i> Modelo UV250 Classic.<br>
-                                        <i class="fa-solid fa-circle-check"></i> 16 GB de almacenamineto.
+                                        <i class="fa-solid fa-circle-check"></i> Paquete de 12 piezas. <br>
+                                        <i class="fa-solid fa-circle-check"></i> +1 de regalo. <br>
+                                        <i class="fa-solid fa-circle-check"></i> Boligrafos punta fina.
                                     </p>
-                                    <p class="info-producto-precio">$120</p>
-                                    <button class="boton-agregar"><i class="fa-solid fa-circle-plus"></i> Agregar al carrito</button>
+                                    <p class="info-producto-precio">
+                                        <del>$70</del> <i class="fa-solid fa-circle-arrow-right"></i> <span class="span">$55</span>
+                                        <p class="articulo-en-descuento"><i class="fa-solid fa-tags"></i> 21.42% de descuento</p>
+                                    </p>
+                                    <button class="boton-agregar" data-id="24"><i class="fa-solid fa-circle-plus"></i> Agregar al carrito</button>
                                 </div>
                             </div>
                             <div class="contenedor-producto">
@@ -352,42 +400,39 @@
                                         <i class="fa-solid fa-circle-check"></i> Modelo UV250 Classic.<br>
                                         <i class="fa-solid fa-circle-check"></i> 16 GB de almacenamineto.
                                     </p>
-                                    <p class="info-producto-precio">$120</p>
-                                    <button class="boton-agregar"><i class="fa-solid fa-circle-plus"></i> Agregar al carrito</button>
+                                    <p class="info-producto-precio">
+                                        <del>$120</del> <i class="fa-solid fa-circle-arrow-right"></i> <span class="span">$100</span>
+                                        <p class="articulo-en-descuento"><i class="fa-solid fa-tags"></i> 16.66% de descuento</p>
+                                    </p>
+                                    <button class="boton-agregar" data-id="31"><i class="fa-solid fa-circle-plus"></i> Agregar al carrito</button>
                                 </div>
                             </div>
                             <div class="contenedor-producto">
-                                <div class="imagen-producto">
-                                    <img class="img" src="img-productos/Producto (31).jpg" alt="producto-1">
-                                </div>
-                                <div class="info-producto">
-                                    <p class="info-producto-nombre">Memoria USB Adata</p>
-                                    <p class="info-producto-des">
-                                        <i class="fa-solid fa-circle-check"></i> Modelo UV250 Classic.<br>
-                                        <i class="fa-solid fa-circle-check"></i> 16 GB de almacenamineto.
-                                    </p>
-                                    <p class="info-producto-precio">$120</p>
-                                    <button class="boton-agregar"><i class="fa-solid fa-circle-plus"></i> Agregar al carrito</button>
-                                </div>
+                              <div class="imagen-producto">
+                    		<img class="img" src="img-productos/Producto (1).jpg">
+                		</div>
+                		<div class="info-producto">
+                    		<p class="info-producto-nombre">Memoria USB-C Kingstone</p>
+                    		<p class="info-producto-des">
+                        	<i class="fa-solid fa-circle-check"></i> Modelo Datatraveler 70. <br>
+                        	<i class="fa-solid fa-circle-check"></i> 32 GB de almacenamiento. <br>
+                        	<i class="fa-solid fa-circle-check"></i> Marca: Kingstone.
+                    		</p>
+                    		<p class="info-producto-precio">
+                                <del>$140</del> <i class="fa-solid fa-circle-arrow-right"></i> <span class="span">$120</span>
+                                <p class="articulo-en-descuento"><i class="fa-solid fa-tags"></i> 14.28% de descuento</p>
+                            </p>
+                    		<button class="boton-agregar" data-id="1"><i class="fa-solid fa-circle-plus"></i> Agregar al carrito</button>
+                		</div>
                             </div>
-                            <div class="contenedor-producto">
-                                <div class="imagen-producto">
-                                    <img class="img" src="img-productos/Producto (31).jpg" alt="producto-1">
-                                </div>
-                                <div class="info-producto">
-                                    <p class="info-producto-nombre">Memoria USB Adata</p>
-                                    <p class="info-producto-des">
-                                        <i class="fa-solid fa-circle-check"></i> Modelo UV250 Classic.<br>
-                                        <i class="fa-solid fa-circle-check"></i> 16 GB de almacenamineto.
-                                    </p>
-                                    <p class="info-producto-precio">$120</p>
-                                    <button class="boton-agregar"><i class="fa-solid fa-circle-plus"></i> Agregar al carrito</button>
-                                </div>
-                            </div>
+
+				
+
+
                             <div class="explorar-mas">
                                 <div class="text-explorar-mas-ofertas">
                                     <p class="puntos-explorar-mas">.<br>.<br>.</p>
-                                    <a href="#" class="text-explorar-mas">Explorar mas...</a>
+                                    <a href="OnSales.html" class="text-explorar-mas">Explorar mas...</a>
                                 </div>
                             </div>
 
@@ -398,7 +443,21 @@
         </section>
     </main>
     <footer class="footer" id="sobre-nosotros">
-        <p>Footer de pagina</p>
+        <div class="footer-left">
+		<img src="imagenes/MaxPrint.png" class="logo-img" alt="Logo MaxPrint LZC">
+	</div>
+	<div class="footer-right">
+        	<p><a href="https://www.google.com/maps/place/Max+print+Lzc/@17.9742529,-102.2349061,17z/data=!4m6!3m5!1s0x84315cc26c51bce3:0x583ccc7472f265eb!8m2!3d17.9742478!4d-102.2323312!16s%2Fg%2F11g6xqvt5w?entry=ttu" target=”_blank”>Dir: Av. Melchor Ocampo 112 3 Emiliano Zapata, Lázaro Cárdenas, Mich.</a></p>
+		<p><a href="mailto:maxprint_lzc@hotmail.com?Subject=">maxprint_lzc@hotmail.com</a></p>
+		<p>Tel. (753) 105 58 82</p>
+		<p>Redes Sociales:</p>
+		<div class="footer-redes">
+                	<a href="https://www.facebook.com/maxprintlzc"><img src="imagenes/faceicon.png" alt="Facebook icon"></a>
+		</div>
+		<p><a href="#">Politicas de privacidad</a></p>
+        	<p><a>Servicio al cliente</a></p>
+	</div>
     </footer>
+	<script src="javascript/main-index.js"></script>
 </body>
 </html>

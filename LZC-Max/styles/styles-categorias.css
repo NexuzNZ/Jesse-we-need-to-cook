@@ -6,6 +6,11 @@
 	box-sizing: border-box;
 }
 
+html {
+	scroll-behavior: smooth;
+}
+
+
 .cabecera {
     background-image: linear-gradient(to right, rgb(126, 230, 85), #393 66%, #393 100%);  /* Chrome 10-25, Safari 5.1-6 */
     /*background: rgb(26, 165, 19);  /* fallback for old browsers */
@@ -331,6 +336,42 @@
     align-items: center;
 }
 
+.footer-right{
+    padding: 50px;
+}
+
+.footer-right p{
+    font-family: "Poppins";
+}
+
+.footer-right a{
+    text-decoration: none;
+}
+        
+.footer-left{
+    padding: 50px;
+}
+
+.footer-left img{
+    filter: hue-rotate(180deg) saturate(0) brightness(0.5);
+}
+
+
+/* Pagina ofertas (Css especial) */
+.info-producto-precio i {
+    color: green;
+    font-size: 20px;
+}
+
+.info-producto-precio del {
+    font-size: 20px;
+}
+
+.articulo-en-descuento {
+    font-size: 10px;
+    color: green;
+}
+
 /* Carrito */
 @media (min-width: 768px) {
     .max-width-30 {
@@ -347,6 +388,7 @@
     background-color: #e1e1e1;
 }
 
+/*
 .contenedor {
     display: flex;
     flex-direction: row;
@@ -356,9 +398,12 @@
     border-top: 2px solid #e1e1e1;
 }
 
+
 .nombre-sitio span {
     color: #037bc0;
 }
+
+*/
 
 .submenu {
     position: relative;
@@ -380,6 +425,7 @@
     min-width: 300px;
 }
 
+/*
 .vacio {
     padding: 10px;
     background-color: crimson;
@@ -388,12 +434,16 @@
     color: white;
 }
 
+
+
 .columns,
 .column {
     width: 100%;
     float: left;
     box-sizing: border-box;
 }
+
+*/
 
 th,
 td {
